@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".searchactivity">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchbarview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/common_google_signin_btn_text_dark_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/searchlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0" />
+
+            <ListView
+                android:id="@+id/searchdesclist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
